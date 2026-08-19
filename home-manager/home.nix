@@ -57,6 +57,14 @@
     tree
   ];
 
+  programs.niri = {
+    enable = true;
+    settings = {
+      spawn-at-startup = "noctalia";
+      prefer-no-csd = true;
+    };
+  };
+
   programs.noctalia = {
     enable = true;
     settings = { # This may also be a string or path to a .toml file.
