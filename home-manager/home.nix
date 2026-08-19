@@ -9,7 +9,7 @@
 }: {
   # You can import other home-manager modules here
   imports = [
-    inputs.niri.homeModules.niri
+    # inputs.niri.homeModules.niri
     inputs.noctalia.homeModules.default
     # If you want to use modules your own flake exports (from modules/home-manager):
     # inputs.self.homeManagerModules.example
@@ -59,15 +59,15 @@
     tree
   ];
 
-  programs.niri = {
-    enable = true;
-    settings = {
-      spawn-at-startup = [
-        { argv = ["nocatlia"]; }
-      ];
-      prefer-no-csd = true;
-    };
-  };
+  # programs.niri = {
+  #   enable = true;
+  #   settings = {
+  #     spawn-at-startup = [
+  #       { argv = ["nocatlia"]; }
+  #     ];
+  #     prefer-no-csd = true;
+  #   };
+  # };
 
   programs.noctalia = {
     enable = true;
