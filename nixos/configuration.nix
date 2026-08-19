@@ -87,7 +87,7 @@
   services.xserver.enable = true;
 
   # Enable display manager  
-  services.displayManager.greetd.enable = true;
+  services.displayManager.gdm.enable = true;
 
   # Enable window manager
   programs.niri.enable = true;
