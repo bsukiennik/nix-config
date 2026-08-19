@@ -9,6 +9,7 @@
 }: {
   # You can import other home-manager modules here
   imports = [
+    inputs.noctalia.homeModules.default
     # If you want to use modules your own flake exports (from modules/home-manager):
     # inputs.self.homeManagerModules.example
 
@@ -55,6 +56,21 @@
     vscodium
     tree
   ];
+
+  programs.noctalia = {
+    enable = true;
+    settings = { # This may also be a string or path to a .toml file.
+      theme = {
+        mode = "dark";
+        source = "builtin";
+        builtin = "Catppuccin";
+      };
+      wallpaper = {
+        # enabled = true;
+        # default.path = "/path/to/wallpapers/wallpaper.png";
+      };
+    };
+  };
 
   # Enable home-manager and git
   programs.home-manager.enable = true;
