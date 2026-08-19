@@ -57,6 +57,7 @@
     vscodium
     discord
     tree
+    foot
   ];
 
   # programs.niri = {
