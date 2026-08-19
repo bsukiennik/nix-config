@@ -84,10 +84,13 @@
     LC_TIME = "fr_FR.UTF-8";
   };
 
-  services = {
-    xserver.enable = true;
-    displayManager.sddm.enable = true;
-  };
+  services.xserver.enable = true;
+
+  # Enable display manager  
+  services.displayManager.greetd.enable = true;
+
+  # Enable window manager
+  programs.niri.enable = true;
 
   services.xserver.xkb = {
     layout = "fr";
@@ -112,7 +115,6 @@
   environment.systemPackages = with pkgs; [
     vim
     git
-    discord
   ];
 
   users.users = {

@@ -55,10 +55,10 @@
   # programs.neovim.enable = true;
   home.packages = with pkgs; [
     vscodium
+    discord
     tree
   ];
 
-  xdg.configFile."/home/bassme/.config/niri/config.kdl".force = true;
   programs.niri = {
     enable = true;
     settings = {
