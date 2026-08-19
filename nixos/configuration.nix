@@ -113,6 +113,7 @@
   environment.systemPackages = with pkgs; [
     vim
     git
+    discord
   ];
 
   users.users = {
