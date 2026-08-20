@@ -68,6 +68,8 @@
     enable = true;
   };
 
+  xdg.configFile."niri/config.kdl".source = config.lib.file.mkOutOfStoreSymlink "/home/bassme/code/nix-config/dotfiles/niri/config.kdl";
+
   # programs.niri = {
   #   enable = true;
   #   settings = {
