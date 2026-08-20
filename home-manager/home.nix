@@ -88,8 +88,8 @@
       };
       wallpaper = {
         enabled = true;
-        directory = "/home/bassme/Pictures/wallpapers";
-        default.path = "/home/bassme/Pictures/wallpapers/eo-red-sea-minimalist.webp";
+        directory = "${config.home.homeDirectory}/Pictures/wallpapers";
+        default.path = "${config.home.homeDirectory}/Pictures/wallpapers/eo-red-sea-minimalist.webp";
       };
     };
   };
