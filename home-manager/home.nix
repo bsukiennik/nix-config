@@ -84,8 +84,8 @@
     settings = { # This may also be a string or path to a .toml file.
       theme = {
         mode = "dark";
-        source = "builtin";
-        builtin = "Nord";
+        source = "wallpaper";
+        wallpaper_scheme  = "m3-content"
       };
       wallpaper = {
         enabled = true;
