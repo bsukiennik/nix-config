@@ -110,12 +110,14 @@
     pulse.enable = true;
   };
 
-  programs.firefox.enable = true;
+  programs = {
+    firefox.enable = true;
+    fish.enable = true;
+  };
 
   environment.systemPackages = with pkgs; [
     vim
     git
-    fish
   ];
 
   users = {
