@@ -58,6 +58,7 @@
     discord
     tree
     nautilus
+    noctalia-shell
   ];
 
   programs.foot = {
@@ -70,18 +71,9 @@
 
   xdg.configFile."niri/config.kdl".source = config.lib.file.mkOutOfStoreSymlink "/home/bassme/code/nix-config/dotfiles/niri/config.kdl";
 
-  # programs.niri = {
-  #   enable = true;
-  #   settings = {
-  #     spawn-at-startup = [
-  #       { argv = ["nocatlia"]; }
-  #     ];
-  #     prefer-no-csd = true;
-  #   };
-  # };
-
   programs.noctalia = {
     enable = true;
+    recommendedServices.enable = true;
     settings = { # This may also be a string or path to a .toml file.
       theme = {
         mode = "dark";
