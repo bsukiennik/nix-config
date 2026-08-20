@@ -57,8 +57,13 @@
     vscodium
     discord
     tree
-    foot
+    nautilus
   ];
+
+  programs.foot = {
+    enable = true;
+    enableFishIntegration = true;
+  };
 
   # programs.niri = {
   #   enable = true;
@@ -76,11 +81,12 @@
       theme = {
         mode = "dark";
         source = "builtin";
-        builtin = "Catppuccin";
+        builtin = "Nord";
       };
       wallpaper = {
-        # enabled = true;
-        # default.path = "/path/to/wallpapers/wallpaper.png";
+        enabled = true;
+        directory = "/home/bassme/Pictures/wallpapers";
+        default.path = "/home/bassme/Pictures/wallpapers/eo-red-sea-minimalist.webp";
       };
     };
   };
