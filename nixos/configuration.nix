@@ -86,6 +86,10 @@
 
   services.xserver.enable = true;
 
+  services.xserver.excludePackages = with pkgs; [
+   xterm
+  ];
+
   # Enable display manager  
   services.displayManager.sddm.enable = true;
 
