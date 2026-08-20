@@ -115,14 +115,18 @@
   environment.systemPackages = with pkgs; [
     vim
     git
+    fish
   ];
 
-  users.users = {
-    bassme = {
-      isNormalUser = true;
-      description = "bassme";
-      openssh.authorizedKeys.keys = [ ];
-      extraGroups = [ "networkmanager" "wheel" ];
+  users = {
+    defaultUserShell = pkgs.fish;
+    users = {
+      bassme = {
+        isNormalUser = true;
+        description = "bassme";
+        openssh.authorizedKeys.keys = [ ];
+        extraGroups = [ "networkmanager" "wheel" ];
+      };
     };
   };
 
