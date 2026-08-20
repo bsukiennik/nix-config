@@ -87,7 +87,7 @@
   services.xserver.enable = true;
 
   services.xserver.excludePackages = with pkgs; [
-   xterm
+    xterm
   ];
 
   # Enable display manager  
