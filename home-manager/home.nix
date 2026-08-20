@@ -58,11 +58,15 @@
     discord
     tree
     nautilus
+
   ];
 
   programs.foot = {
     enable = true;
-    enableFishIntegration = true;
+  };
+
+  programs.fish = {
+    enable = true;
   };
 
   # programs.niri = {
