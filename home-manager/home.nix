@@ -58,7 +58,6 @@
     discord
     tree
     nautilus
-    noctalia-shell
   ];
 
   programs.foot = {
