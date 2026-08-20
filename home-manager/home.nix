@@ -85,7 +85,7 @@
       theme = {
         mode = "dark";
         source = "wallpaper";
-        wallpaper_scheme  = "m3-content"
+        wallpaper_scheme  = "m3-content";
       };
       wallpaper = {
         enabled = true;
