@@ -95,6 +95,10 @@
 
   # Enable window manager
   programs.niri.enable = true;
+  
+  hardware.bluetooth.enable;
+  services.power-profiles-daemon.enable;
+  services.upower.enable;
 
   services.xserver.xkb = {
     layout = "fr";
