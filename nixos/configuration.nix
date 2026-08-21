@@ -84,11 +84,12 @@
     LC_TIME = "fr_FR.UTF-8";
   };
 
-  services.xserver.enable = true;
-
-  services.xserver.excludePackages = with pkgs; [
-    xterm
-  ];
+  services.xserver = {
+    enable = true;
+    excludePackages = with pkgs; [
+      xterm
+    ];
+  };
 
   # Enable display manager  
   services.displayManager.sddm.enable = true;
