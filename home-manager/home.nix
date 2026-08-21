@@ -58,6 +58,7 @@
     discord
     tree
     nautilus
+    xwayland-satellite
   ];
 
   programs.foot = {
