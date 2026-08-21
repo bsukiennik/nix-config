@@ -1,6 +1,9 @@
 {
+  config,
+  ...
+}: {
   home.file.".config/noctalia/palettes/eo-evangelion-red-sea-palette.json" = {
-    source = ./eo-evangelion-red-sea-palette.json;
+    source = config.lib.file.mkOutOfStoreSymlink "./eo-evangelion-red-sea-palette.json";
   };
 
   programs.noctalia = {

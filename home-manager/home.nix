@@ -13,6 +13,7 @@
     # If you want to use modules your own flake exports (from modules/home-manager):
     inputs.self.homeManagerModules.fish
     inputs.self.homeManagerModules.noctalia
+    inputs.self.homeManagerModules.niri
 
     # Or modules exported from other flakes (such as nix-colors):
     # inputs.nix-colors.homeManagerModules.default
@@ -65,19 +66,6 @@
   programs.foot = {
     enable = true;
   };
-
-  xdg.portal = {
-    enable = true;
-    extraPortals = with pkgs; [
-      xdg-desktop-portal-gnome
-      xdg-desktop-portal-gtk
-    ];
-    config.niri = {
-      default = [ "gnome" "gtk" ];
-    };
-  };
-
-  xdg.configFile."niri/config.kdl".source = config.lib.file.mkOutOfStoreSymlink "/home/bassme/code/nix-config/dotfiles/niri/config.kdl";
 
   # Enable home-manager and git
   programs.home-manager.enable = true;
