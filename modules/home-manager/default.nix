@@ -3,4 +3,5 @@
 {
   # List your module files here
   fish = import ./fish.nix;
+  noctalia = import ./noctalia.nix;
 }

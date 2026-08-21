@@ -12,6 +12,7 @@
     inputs.noctalia.homeModules.default
     # If you want to use modules your own flake exports (from modules/home-manager):
     inputs.self.homeManagerModules.fish
+    inputs.self.homeManagerModules.noctalia
 
     # Or modules exported from other flakes (such as nix-colors):
     # inputs.nix-colors.homeManagerModules.default
@@ -65,10 +66,6 @@
     enable = true;
   };
 
-  # programs.fish = {
-  #   enable = true;
-  # };
-
   xdg.portal = {
     enable = true;
     extraPortals = with pkgs; [
@@ -81,22 +78,6 @@
   };
 
   xdg.configFile."niri/config.kdl".source = config.lib.file.mkOutOfStoreSymlink "/home/bassme/code/nix-config/dotfiles/niri/config.kdl";
-
-  programs.noctalia = {
-    enable = true;
-    settings = { # This may also be a string or path to a .toml file.
-      theme = {
-        mode = "dark";
-        source = "wallpaper";
-        wallpaper_scheme  = "m3-content";
-      };
-      wallpaper = {
-        enabled = true;
-        directory = "${config.home.homeDirectory}/Pictures/wallpapers";
-        default.path = "${config.home.homeDirectory}/Pictures/wallpapers/eo-red-sea-minimalist.webp";
-      };
-    };
-  };
 
   # Enable home-manager and git
   programs.home-manager.enable = true;
