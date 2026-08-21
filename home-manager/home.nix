@@ -9,10 +9,9 @@
 }: {
   # You can import other home-manager modules here
   imports = [
-    # inputs.niri.homeModules.niri
     inputs.noctalia.homeModules.default
     # If you want to use modules your own flake exports (from modules/home-manager):
-    # inputs.self.homeManagerModules.example
+    inputs.self.homeManagerModules.niri
 
     # Or modules exported from other flakes (such as nix-colors):
     # inputs.nix-colors.homeManagerModules.default
@@ -70,18 +69,18 @@
     enable = true;
   };
 
-  xdg.portal = {
-    enable = true;
-    extraPortals = with pkgs; [
-      xdg-desktop-portal-gnome
-      xdg-desktop-portal-gtk
-    ];
-    config.niri = {
-      default = [ "gnome" "gtk" ];
-    };
-  };
+  # xdg.portal = {
+  #   enable = true;
+  #   extraPortals = with pkgs; [
+  #     xdg-desktop-portal-gnome
+  #     xdg-desktop-portal-gtk
+  #   ];
+  #   config.niri = {
+  #     default = [ "gnome" "gtk" ];
+  #   };
+  # };
 
-  xdg.configFile."niri/config.kdl".source = config.lib.file.mkOutOfStoreSymlink "/home/bassme/code/nix-config/dotfiles/niri/config.kdl";
+  # xdg.configFile."niri/config.kdl".source = config.lib.file.mkOutOfStoreSymlink "/home/bassme/code/nix-config/dotfiles/niri/config.kdl";
 
   programs.noctalia = {
     enable = true;
