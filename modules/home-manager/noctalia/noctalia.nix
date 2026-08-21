@@ -1,6 +1,6 @@
 {
   home.file.".config/noctalia/palettes/eo-evangelion-red-sea-palette.json" = {
-    source = /home/bassme/code/nix-config/dotfiles/noctalia/eo-evangelion-red-sea-palette.json;
+    source = ./eo-evangelion-red-sea-palette.json;
   };
 
   programs.noctalia = {
@@ -13,8 +13,8 @@
       };
       wallpaper = {
         enabled = true;
-        directory = "${config.home.homeDirectory}/Pictures/wallpapers";
-        default.path = "${config.home.homeDirectory}/Pictures/wallpapers/eo-red-sea-minimalist.webp";
+        directory = "/home/bassme/Pictures/wallpapers";
+        default.path = "/home/bassme/Pictures/wallpapers/eo-red-sea-minimalist.webp";
       };
     };
   };
