@@ -6,6 +6,13 @@
 // Input device configuration.
 // Find the full list of options on the wiki:
 // https://niri-wm.github.io/niri/Configuration:-Input
+
+workspace "1"
+workspace "2"
+workspace "3"
+workspace "4"
+workspace "5"
+
 input {
     keyboard {
         xkb {
@@ -461,6 +468,16 @@ binds {
     Ctrl+Alt+Up         { focus-workspace-up; }
     Ctrl+Alt+Shift+Down { move-column-to-workspace-down; }
     Ctrl+Alt+Shift+Up   { move-column-to-workspace-up; }
+
+    Ctrl+Alt+ampersand  { focus-workspace 1; }
+    Ctrl+Alt+eacute     { focus-workspace 2; }
+    Ctrl+Alt+quotedbl   { focus-workspace 3; }
+    Ctrl+Alt+apostrophe { focus-workspace 4; }
+    Ctrl+Alt+parenleft  { focus-workspace 5; }
+    Ctrl+Alt+minus      { focus-workspace 6; }
+    Ctrl+Alt+egrave     { focus-workspace 7; }
+    Ctrl+Alt+underscore { focus-workspace 8; }
+    Ctrl+Alt+ccedilla   { focus-workspace 9; }
 
     // Alternatively, there are commands to move just a single window:
     // Mod+Ctrl+Page_Down { move-window-to-workspace-down; }
