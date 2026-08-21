@@ -59,6 +59,7 @@
     tree
     nautilus
     xwayland-satellite
+    hyprpicker
   ];
 
   programs.foot = {
