@@ -1,5 +1,5 @@
 {
-  programs.foot = {
+  programs.fish = {
     enable = true;
   };
 }
