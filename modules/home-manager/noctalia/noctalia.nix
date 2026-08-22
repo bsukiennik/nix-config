@@ -1,14 +1,15 @@
 {
   config,
   ...
-}: {
-  let
-    noctaliaModulePath = "/home/bassme/code/nix-config/modules/home-manager/noctalia";
-    noctaliaConfigPath = "$HOME/.config/noctalia"
-  in
+}:
+let
+  noctaliaModulePath = "/home/bassme/code/nix-config/modules/home-manager/noctalia";
+  noctaliaConfigPath = "$HOME/.config/noctalia";
+in
+{
   xdg.configFile = {
     # Color palette
-    "noctalia/eo-evangelion-red-sea-palette.json" = {
+    "noctalia/palettes/eo-evangelion-red-sea-palette.json" = {
       source = config.lib.file.mkOutOfStoreSymlink "${noctaliaModulePath}/eo-evangelion-red-sea-palette.json";
     };
 
