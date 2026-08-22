@@ -2,7 +2,7 @@
 # These should be stuff you would like to share with others, not your personal configurations.
 {
   # List your module files here
-  fish = import ./fish.nix;
+  fish = import ./fish/fish.nix;
   noctalia = import ./noctalia/noctalia.nix;
   niri = import ./niri/niri.nix;
 }
