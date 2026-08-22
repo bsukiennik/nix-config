@@ -2,13 +2,21 @@
   config,
   ...
 }: {
-  home.file.".config/noctalia/palettes/eo-evangelion-red-sea-palette.json" = {
-    source = config.lib.file.mkOutOfStoreSymlink "./eo-evangelion-red-sea-palette.json";
+  xdg.configFile = {
+    # Color palette
+    "noctalia/eo-evangelion-red-sea-palette.json" = {
+      source = config.lib.file.mkOutOfStoreSymlink "/home/bassme/code/nix-config/modules/home-manager/noctalia/eo-evangelion-red-sea-palette.json";
+    };
+
+    # Wallpaper
+    "noctalia/wallpapers/eo-evangelion-red-sea-wallpaper.webp" = {
+      source = config.lib.file.mkOutOfStoreSymlink "/home/bassme/code/nix-config/modules/home-manager/noctalia/eo-evangelion-red-sea-wallpaper.webp";
+    };
   };
 
   programs.noctalia = {
     enable = true;
-    settings = { # This may also be a string or path to a .toml file.
+    settings = {
       theme = {
         mode = "dark";
         source = "custom";
@@ -16,8 +24,8 @@
       };
       wallpaper = {
         enabled = true;
-        directory = "/home/bassme/Pictures/wallpapers";
-        default.path = "/home/bassme/Pictures/wallpapers/eo-red-sea-minimalist.webp";
+        directory = xdg.configFile."noctalia/wallpapers/";
+        default.path = xdg.configFile."noctalia/wallpapers/eo-evangelion-red-sea-wallpaper.webp";
       };
     };
   };
