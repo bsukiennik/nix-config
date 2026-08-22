@@ -2,15 +2,19 @@
   config,
   ...
 }: {
+  let
+    noctaliaModulePath = "/home/bassme/code/nix-config/modules/home-manager/noctalia";
+    noctaliaConfigPath = "$HOME/.config/noctalia"
+  in
   xdg.configFile = {
     # Color palette
     "noctalia/eo-evangelion-red-sea-palette.json" = {
-      source = config.lib.file.mkOutOfStoreSymlink "/home/bassme/code/nix-config/modules/home-manager/noctalia/eo-evangelion-red-sea-palette.json";
+      source = config.lib.file.mkOutOfStoreSymlink "${noctaliaModulePath}/eo-evangelion-red-sea-palette.json";
     };
 
     # Wallpaper
     "noctalia/wallpapers/eo-evangelion-red-sea-wallpaper.webp" = {
-      source = config.lib.file.mkOutOfStoreSymlink "/home/bassme/code/nix-config/modules/home-manager/noctalia/eo-evangelion-red-sea-wallpaper.webp";
+      source = config.lib.file.mkOutOfStoreSymlink "${noctaliaModulePath}/eo-evangelion-red-sea-wallpaper.webp";
     };
   };
 
@@ -24,8 +28,8 @@
       };
       wallpaper = {
         enabled = true;
-        directory = xdg.configFile."noctalia/wallpapers/";
-        default.path = xdg.configFile."noctalia/wallpapers/eo-evangelion-red-sea-wallpaper.webp";
+        directory = "${noctaliaConfigPath}/wallpapers/";
+        default.path = "${noctaliaConfigPath}wallpapers/eo-evangelion-red-sea-wallpaper.webp";
       };
     };
   };
