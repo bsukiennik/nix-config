@@ -4,7 +4,6 @@
 }:
 let
   noctaliaModulePath = "/home/bassme/code/nix-config/modules/home-manager/noctalia";
-  noctaliaConfigPath = "$HOME/.config/noctalia";
 in
 {
   xdg.configFile = {
@@ -29,8 +28,8 @@ in
       };
       wallpaper = {
         enabled = true;
-        directory = "${noctaliaConfigPath}/wallpapers/";
-        default.path = "${noctaliaConfigPath}wallpapers/eo-evangelion-red-sea-wallpaper.webp";
+        directory = "/home/bassme/.config/noctalia/wallpapers";
+        default.path = "/home/bassme/.config/noctalia/wallpapers/eo-evangelion-red-sea-wallpaper.webp";
       };
     };
   };
