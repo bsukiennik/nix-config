@@ -2,10 +2,13 @@
   programs.foot = {
     enable = true;
     settings = {
-      colors = {
-        alpha = 0.75;
-        blur = yes;
-      }
+      main = {
+        include = "~/.config/foot/themes/noctalia";
+      };
+      colors-dark = {
+        alpha = 0.50;
+        blur = true;
+      };
     };
   };
 }

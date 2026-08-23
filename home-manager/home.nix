@@ -62,6 +62,7 @@
     nautilus
     xwayland-satellite
     hyprpicker
+    microfetch
   ];
 
   # Enable home-manager and git

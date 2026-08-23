@@ -5,5 +5,5 @@
   fish = import ./fish/fish.nix;
   noctalia = import ./noctalia/noctalia.nix;
   niri = import ./niri/niri.nix;
-  foot = import ./foot/foot.nix
+  foot = import ./foot/foot.nix;
 }

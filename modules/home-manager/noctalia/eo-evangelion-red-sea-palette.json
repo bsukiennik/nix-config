@@ -17,29 +17,29 @@
     "mHover": "#090A05",
     "mOnHover": "#f8f8f2",
     "terminal": {
-      "background": "#272822",
+      "background": "041431",
       "foreground": "#f8f8f2",
-      "cursor": "#f8f8f2",
+      "cursor": "#D93D26",
       "cursorText": "#272822",
       "selectionBg": "#f8f8f2",
       "selectionFg": "#272822",
       "normal": {
         "black": "#272822",
         "red": "#D93D26",
-        "green": "#9E5B62",
+        "green": "#40A853",
         "yellow": "#f4bf75",
-        "blue": "#041431",
-        "magenta": "#ae81ff",
+        "blue": "#9E5B62",
+        "magenta": "#805EBE",
         "cyan": "#a1efe4",
         "white": "#f8f8f2"
       },
       "bright": {
         "black": "#75715e",
         "red": "#D93D26",
-        "green": "#9E5B62",
+        "green": "#40A853",
         "yellow": "#f4bf75",
-        "blue": "#041431",
-        "magenta": "#ae81ff",
+        "blue": "#9E5B62",
+        "magenta": "#805EBE",
         "cyan": "#a1efe4",
         "white": "#f9f8f5"
       }
