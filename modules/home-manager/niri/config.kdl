@@ -319,6 +319,7 @@ window-rule {
     match app-id="discord"
     match app-id="firefox"
     match app-id="codium"
+    match app-id="spotify"
     open-maximized true
 }
 

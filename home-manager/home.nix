@@ -63,6 +63,7 @@
     xwayland-satellite
     hyprpicker
     microfetch
+    spotify
   ];
 
   # Enable home-manager and git
