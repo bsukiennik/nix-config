@@ -14,6 +14,7 @@
     inputs.self.homeManagerModules.fish
     inputs.self.homeManagerModules.noctalia
     inputs.self.homeManagerModules.niri
+    inputs.self.homeManagerModules.foot
 
     # Or modules exported from other flakes (such as nix-colors):
     # inputs.nix-colors.homeManagerModules.default
@@ -62,10 +63,6 @@
     xwayland-satellite
     hyprpicker
   ];
-
-  programs.foot = {
-    enable = true;
-  };
 
   # Enable home-manager and git
   programs.home-manager.enable = true;
