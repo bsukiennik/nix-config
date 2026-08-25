@@ -64,6 +64,7 @@
     hyprpicker
     microfetch
     spotify
+    zoxide
   ];
 
   # Enable home-manager and git
