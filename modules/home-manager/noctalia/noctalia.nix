@@ -414,7 +414,7 @@ in
         date_format = "%A, %x";
         disable_mipmaps = false;
         external_ip_enabled = false;
-        font_family = "Liberation Mono";
+        font_family = "JetBrainsMono Nerd Font";
         input_borders = true;
         launch_apps_as_systemd_services = false;
         launch_apps_custom_command = "";

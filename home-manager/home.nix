@@ -53,6 +53,8 @@
     homeDirectory = "/home/bassme";
   };
 
+  fonts.fontconfig.enable = true;
+
   # Add stuff for your user as you see fit:
   # programs.neovim.enable = true;
   home.packages = with pkgs; [
@@ -65,7 +67,9 @@
     microfetch
     spotify
     zoxide
+    nerd-fonts.jetbrains-mono
   ];
+
 
   # Enable home-manager and git
   programs.home-manager.enable = true;
