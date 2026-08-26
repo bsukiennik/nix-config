@@ -317,7 +317,7 @@ animations {
 
 window-rule {
     match app-id="discord"
-    match app-id="firefox"
+    match app-id="librewolf"
     match app-id="codium"
     match app-id="Spotify"
     open-maximized true
