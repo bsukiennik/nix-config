@@ -69,6 +69,7 @@
     spotify
     zoxide
     nerd-fonts.jetbrains-mono
+    floorp-bin
   ];
 
 

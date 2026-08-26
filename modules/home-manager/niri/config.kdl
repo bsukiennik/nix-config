@@ -320,6 +320,7 @@ window-rule {
     match app-id="librewolf"
     match app-id="codium"
     match app-id="Spotify"
+    match app-id="floorp"
     open-maximized true
 }
 
