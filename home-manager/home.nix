@@ -15,6 +15,7 @@
     inputs.self.homeManagerModules.noctalia
     inputs.self.homeManagerModules.niri
     inputs.self.homeManagerModules.foot
+    inputs.self.homeManagerModules.librewolf
 
     # Or modules exported from other flakes (such as nix-colors):
     # inputs.nix-colors.homeManagerModules.default
