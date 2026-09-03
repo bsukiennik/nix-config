@@ -70,8 +70,9 @@
     zoxide
     nerd-fonts.jetbrains-mono
     floorp-bin
+    pnpm
+    nodejs
   ];
-
 
   # Enable home-manager and git
   programs.home-manager.enable = true;
