@@ -72,6 +72,8 @@
     floorp-bin
     pnpm
     nodejs
+    steam
+    htop
   ];
 
   # Enable home-manager and git
