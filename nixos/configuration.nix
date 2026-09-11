@@ -126,6 +126,7 @@
   environment.systemPackages = with pkgs; [
     vim
     git
+    virtualbox
   ];
 
   users = {
@@ -140,9 +141,19 @@
     };
   };
 
+  programs.steam = {
+    enable = true;
+    remotePlay.openFirewall = true; # Open ports in the firewall for Steam Remote Play
+    dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
+    localNetworkGameTransfers.openFirewall = true; # Open ports in the firewall for Steam Local Network Game Transfers
+  };
+
   virtualisation.docker = {
     enable = true;
   };
+
+  virtualisation.virtualbox.host.enable = true;
+  users.extraGroups.vboxusers.members = [ "bassme" ];
 
   system.stateVersion = "26.05";
 }

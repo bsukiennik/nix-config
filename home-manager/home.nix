@@ -72,8 +72,10 @@
     floorp-bin
     pnpm
     nodejs
-    steam
     htop
+    micropython
+    python3
+    uv
   ];
 
   # Enable home-manager and git
